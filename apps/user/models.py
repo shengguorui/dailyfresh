@@ -37,6 +37,8 @@ class Address(BaseModel):
     phone = models.CharField(max_length=11, verbose_name='联系电话')
     is_default = models.BooleanField(default=False, verbose_name='是否默认')
 
+
+
     # 自定义一个模型管理器类
     objects = AddressManager()
 
